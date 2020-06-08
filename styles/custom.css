@@ -1,0 +1,11 @@
+/* Custom Style Sheet */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* My colours */
+
+.my-purple {
+  color: #b967ff;
+}

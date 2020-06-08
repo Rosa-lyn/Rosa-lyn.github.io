@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="./styles/bootstrap.css">
+  <link rel="stylesheet" href="./styles/custom.css">
   <script src="https://kit.fontawesome.com/4a5fbccc8b.js" crossorigin="anonymous"></script>
 
 
@@ -14,36 +15,48 @@
 
 <body>
   <!-- navbar -->
-  <ul class="nav sticky-top justify-content-center border-bottom bg-white">
-    <li class=" nav-item">
-      <a class="nav-link" href="#about">about</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#coding">coding</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#design">design</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#cv">CV</a>
-    </li>
-  </ul>
+  <nav>
+    <ul class="nav sticky-top justify-content-center border-bottom bg-white">
+      <li class=" nav-item">
+        <a class="nav-link" href="#about">about</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#coding">coding</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#design">design</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#cv">CV</a>
+      </li>
+    </ul>
+  </nav>
   <!-- navbar end -->
+
   <div class="container">
 
-    <div class="min-vh-100 my-auto">
-      <!-- logo -->
-      <img class="img-fluid mt-5" src="./images/rlpw-1.png">
+    <section class="min-vh-100 d-flex">
+      <div class=" align-self-center">
 
-      <!-- subheading -->
-      <h1>full-stack web developer</h1>
+        <!-- logo -->
+        <div class="row">
+          <div class="col">
+            <a href="#"> <img class="img-fluid" src="./images/rlpw-1.png" alt="logo"> </a>
+          </div>
+        </div>
 
+        <!-- subheading -->
+        <div class="row">
+          <div class="col">
+            <h1 class="display-3">full-stack web developer</h1>
+          </div>
+        </div>
+      </div>
 
-
-    </div>
+    </section>
 
     <!-- about me -->
-    <div class="min-vh-100" id="about">
+    <section class="min-vh-100" id="about">
       <div class="row">
         <div class="col-md-12">
           <h2>about me</h2>
@@ -60,11 +73,11 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
     <!-- about me end -->
 
     <!-- coding -->
-    <div class="min-vh-100" id="coding">
+    <section class="min-vh-100" id="coding">
 
       <div class="row">
         <div class="col-md-12">
@@ -97,13 +110,13 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- coding end -->
 
 
     <!-- design -->
-    <div class="min-vh-100" id="design">
+    <section class="min-vh-100" id="design">
 
       <div class="row">
         <div class="col-md-12">
@@ -136,12 +149,12 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- design end -->
 
     <!-- cv -->
-    <div class="min-vh-100" id="cv">
+    <section class="min-vh-100" id="cv">
 
       <div class="row">
         <div class="col-md-12">
@@ -149,18 +162,32 @@
         </div>
 
       </div>
-    </div>
+    </section>
     <!-- cv end -->
 
   </div> <!-- container end -->
-  <div class="container-fluid justify-content-center">
 
-    <footer class="">
-      <i class="fab fa-github"></i>
-      <i class="fab fa-linkedin"></i>
-      <h6>roz.s.land@gmail.com</h6>
-    </footer>
-  </div>
+  <footer>
+    <div class="row text-center">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-4">
+        <h3>
+          <a href="https://github.com/rosa-lyn" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/rosalynland/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </h3>
+        <h4 class=display-5>
+          <a href="mailto:roz.s.land@gmail.com">roz.s.land@gmail.com</a>
+        </h4>
+
+      </div>
+      <div class="col-md-4">
+
+      </div>
+
+    </div>
+  </footer>
 </body>
 
 </html>
