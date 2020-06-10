@@ -1,11 +1,42 @@
 /* Custom Style Sheet */
 
+/* General */
 html {
   scroll-behavior: smooth;
 }
 
 /* My colours */
-
 .my-purple {
+  color: #b967ff;
+}
+
+/* Icons */
+#chevron a:link {
+  color: #ededed;
+}
+#chevron a:visited {
+  color: #ededed;
+}
+#chevron a:hover {
+  color: #bcbcbc;
+}
+
+/* Nav styling */
+.nav-border {
+  border: solid 1px #b967ff;
+}
+.my-sticky {
+  top: 10px;
+}
+.nav-link {
+  font-size: 2rem;
+}
+.nav-link:link {
+  color: #292b2c;
+}
+.nav-link:visited {
+  color: #292b2c;
+}
+.nav-link:hover {
   color: #b967ff;
 }
