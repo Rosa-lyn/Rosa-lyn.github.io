@@ -1,8 +1,19 @@
 /* Custom Style Sheet */
 
 /* General */
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  /* font-family: "Rubik", sans-serif; */
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Lobster", cursive;
+  font-weight: bolder;
 }
 
 /* My colours */
@@ -39,4 +50,63 @@ html {
 }
 .nav-link:hover {
   color: #b967ff;
+}
+
+/* Footer */
+a:link {
+  color: #292b2c;
+}
+a:visited {
+  color: #292b2c;
+}
+a:hover {
+  color: #b967ff;
+  text-decoration: none;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  padding-left: 1.5rem;
+  padding: 5px 0;
+}
+
+.github-list::before {
+  content: "\f09b";
+  font-family: "FontAwesome";
+  display: inline-block;
+  width: 1.5rem;
+}
+.linkedin-list::before {
+  content: "\f0e1";
+  font-family: "FontAwesome";
+  display: inline-block;
+  width: 1.5rem;
+}
+.email-list::before {
+  content: "\f0e0";
+  font-family: "FontAwesome";
+  display: inline-block;
+  width: 1.5rem;
+}
+.copyright-list::before {
+  content: "\f1f9";
+  font-family: "FontAwesome";
+  display: inline-block;
+  width: 1.5rem;
+}
+.location-list::before {
+  content: "\f3c5";
+  font-family: "FontAwesome";
+  display: inline-block;
+  width: 1.5rem;
+}
+.ellipsis-list::before {
+  content: "\f141";
+  font-family: "FontAwesome";
+  display: inline-block;
+  width: 1.5rem;
 }
