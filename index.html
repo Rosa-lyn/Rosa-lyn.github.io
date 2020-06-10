@@ -21,11 +21,11 @@
 
 <body>
 
-
+  <!-- top container -->
   <div class="container">
 
     <section class="vh-100 d-flex">
-      <div class=" align-self-center">
+      <div class="align-self-center">
 
         <!-- logo -->
         <div class="row">
@@ -41,43 +41,25 @@
           </div>
         </div>
 
-      </div>
-
-      <!-- <div class=" bg-light"> -->
-      <!-- <div class="row align-self-end bg-secondary">
-        <div class="col-md-12">
-          <p class="display-1 text-center"><a href="#about"><i class="fas fa-chevron-down"></i></a></p>
-        </div>
-      </div> -->
-      <!-- </div> -->
-
-      <!-- <div class="align-items-end">
+        <!-- Down arrow -->
         <div class="row">
-          <div class="col-md-6 d-flex text-center justify-content-center">
-            <p class="display-1 text-center">
-              <a href="#about">
-                <i class="fas fa-chevron-down"></i>
-              </a>
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <p class="display-1 text-center mt-5 pt-5 pb-0 mb-0" id="chevron">
+              <a href="#about"><i class="fas fa-chevron-down"></i></a>
             </p>
           </div>
-          <div class="col-md-6"></div>
-
-
+          <div class="col-md-4"></div>
         </div>
-      </div> -->
-      <p class="fixed-bottom display-1 text-center" id="chevron">
-        <a href="#about">
-          <i class="fas fa-chevron-down"></i>
-        </a>
-      </p>
+
+      </div>
     </section>
+  </div> <!-- top container end -->
 
-  </div> <!-- container end -->
-
-
+  <!-- main container -->
   <div class="container">
-    <!-- navbar -->
 
+    <!-- navbar -->
     <ul role="navigation" class="nav my-sticky sticky-top justify-content-center  rounded nav-border bg-white">
       <li class="nav-item px-2">
         <a class="nav-link" href="#about">about</a>
@@ -94,9 +76,8 @@
       <li class="nav-item px-2">
         <a class="nav-link" href="#contact">contact</a>
       </li>
-    </ul>
+    </ul><!-- navbar end -->
 
-    <!-- navbar end -->
     <!-- about me -->
     <section class="vh-100 mt-5" id="about">
       <div class="row">
@@ -105,9 +86,12 @@
         </div>
       </div>
       <div class="row">
+        <!-- about me img -->
         <div class="col-md-6">
           <img class="img-fluid border" src="./images/rlpw-2.png" alt="photo of me">
-        </div>
+        </div><!-- about me img end -->
+
+        <!-- about me text -->
         <div class="col-md-6">
           <p class="text-dark">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel molestie ante. Curabitur metus nunc,
@@ -129,10 +113,9 @@
             mollis leo at fermentum. Etiam congue pretium dignissim. Vivamus placerat sem ac hendrerit efficitur. Donec
             ornare luctus velit eu volutpat.
           </p>
-        </div>
+        </div><!-- about me text end-->
       </div>
-    </section>
-    <!-- about me end -->
+    </section><!-- about me end -->
 
     <!-- coding -->
     <section class="min-vh-100" id="coding">
@@ -144,6 +127,7 @@
       </div>
 
       <div class="row">
+        <!-- news den text -->
         <div class="col-md-6">
           <h3 class="text-dark">The News Den API</h3>
           <p class="text-dark">
@@ -151,28 +135,30 @@
             database and Knex for database migrations and query building. Tested
             with Mocha, Chai and Supertest, and hosted on Heroku.
           </p>
-        </div>
+        </div><!-- news den text end -->
+
+        <!-- news den img -->
         <div class="col-md-6">
           <img class="img-fluid border" src="./images/rlpw-4.png" alt="picture of project 1">
-        </div>
+        </div><!-- news den img end -->
       </div>
 
       <div class="row">
+        <!-- portfolio img -->
         <div class="col-md-6">
-          <img class="img-fluid border" src="./images/rlpw-3.png" alt="picture of project 2">
-        </div>
+          <img class="img-fluid border" src="./images/rlpw-3.png" alt="picture of portfolio website">
+        </div><!-- portfolio img end -->
+
+        <!-- portfolio text -->
         <div class="col-md-6">
           <h3 class="text-dark">Portfolio Website</h3>
           <p class="text-dark">
             My portfolio website, made with HTML5 and CSS3. Logo made with Adobe
             Illustrator.
           </p>
-        </div>
+        </div><!-- portfolio text end -->
       </div>
-    </section>
-
-    <!-- coding end -->
-
+    </section><!-- coding end -->
 
     <!-- design -->
     <section class="min-vh-100" id="design">
@@ -184,33 +170,37 @@
       </div>
 
       <div class="row">
+        <!-- design project 1 text -->
         <div class="col-md-6">
           <h3 class="text-dark">design project 1</h3>
           <p class="text-dark">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis natus distinctio neque velit expedita
             assumenda harum nam!
           </p>
-        </div>
+        </div><!-- design project 1 text end -->
+
+        <!-- design project 1 img -->
         <div class="col-md-6">
           <img class="img-fluid border" src="" alt="picture of project 1">
-        </div>
+        </div><!-- design project 1 img end -->
       </div>
 
       <div class="row">
+        <!-- design project 2 img -->
         <div class="col-md-6">
           <img class="img-fluid border" src="" alt="picture of project 2">
-        </div>
+        </div><!-- design project 2 img end -->
+
+        <!-- design project 2 text -->
         <div class="col-md-6">
           <h3 class="text-dark">design project 2</h3>
           <p class="text-dark">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis natus distinctio neque velit expedita
             assumenda harum nam!
           </p>
-        </div>
+        </div><!-- design project 2 text end -->
       </div>
-    </section>
-
-    <!-- design end -->
+    </section><!-- design end -->
 
     <!-- cv -->
     <section class="min-vh-100" id="cv">
@@ -225,17 +215,16 @@
         <div class="col">
           <p>If you're interested in my work, I'd love for you to get in touch.</p>
           <p>
-
         </div>
       </div>
-    </section>
-    <!-- cv end -->
+    </section><!-- cv end -->
 
-  </div> <!-- container end -->
+  </div> <!-- main container end -->
 
   <footer id="contact" class="bg-light py-5">
     <div class="container">
       <div class="row">
+        <!-- left footer col-->
         <div class="col-md-3">
           <h1 class="pt-4 pb-2 pl-2 mt-5 text-dark">
             contact
@@ -257,10 +246,11 @@
               </a>
             </li>
           </ul>
+        </div> <!-- left footer col end-->
 
-        </div>
         <div class="col-md-2"></div>
 
+        <!-- middle footer col -->
         <div class="col-md-3 align-self-end">
           <ul class="footer-list">
             <li class="location-list">
@@ -271,10 +261,11 @@
               Rosalyn Land
             </li>
           </ul>
-        </div>
-        <div class="col-md-1">
+        </div><!-- middle footer col end -->
 
-        </div>
+        <div class="col-md-1"></div>
+
+        <!-- right footer col -->
         <div class="col-md-3 ">
           <h1 class="pt-4 pb-2 pl-2 mt-5 text-dark">other projects</h1>
           <ul class="footer-list">
@@ -282,10 +273,9 @@
               coming soon
             </li>
           </ul>
-        </div>
-
-      </div>
-    </div>
+        </div><!-- right footer col end -->
+      </div><!-- footer row end -->
+    </div><!-- footer container end -->
   </footer>
 </body>
 
