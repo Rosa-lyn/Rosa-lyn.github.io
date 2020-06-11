@@ -55,6 +55,14 @@ p {
   color: #b967ff;
 }
 
+/* Carousel */
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon,
+.carousel-indicators {
+  filter: invert(1);
+}
+
 /* Footer */
 a:link {
   color: #292b2c;
