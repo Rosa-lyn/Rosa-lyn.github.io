@@ -59,8 +59,12 @@ p {
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon,
-.carousel-indicators {
+.carousel-indicators,
+.carousel-caption {
   filter: invert(1);
+}
+.carousel-caption p {
+  font-size: 16px;
 }
 
 /* Footer */
