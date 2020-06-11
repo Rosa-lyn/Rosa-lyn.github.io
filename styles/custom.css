@@ -19,6 +19,15 @@ p {
   font-size: 24px;
 }
 
+.section-title::before {
+  display: block;
+  content: " ";
+  margin-top: -200px;
+  height: 300px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 /* My colours */
 .my-purple {
   color: #b967ff;

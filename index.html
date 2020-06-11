@@ -18,17 +18,6 @@
   <!-- Icons -->
   <script src="https://kit.fontawesome.com/4a5fbccc8b.js" crossorigin="anonymous"></script>
 
-  <!-- JS -->
-
-  <!-- JQuery-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-
-  <!-- Popper and JS Plugins -->
-  <script src="js/bootstrap.bundle.js"></script>
-
-
 </head>
 
 <body>
@@ -71,30 +60,64 @@
   <!-- main container -->
   <div class="container">
 
-    <!-- navbar -->
-    <ul role="navigation" class="nav my-sticky sticky-top justify-content-center rounded nav-border bg-white">
-      <li class="nav-item px-2">
-        <a class="nav-link" href="#about">about</a>
-      </li>
-      <li class="nav-item px-2">
-        <a class="nav-link" href="#coding">coding</a>
-      </li>
-      <li class="nav-item px-2">
-        <a class="nav-link" href="#design">design</a>
-      </li>
-      <li class="nav-item px-2">
-        <a class="nav-link" href="#cv">cv</a>
-      </li>
-      <li class="nav-item px-2">
-        <a class="nav-link" href="#contact">contact</a>
-      </li>
-    </ul><!-- navbar end -->
+    <nav class="navbar navbar-expand-md nav-border my-sticky sticky-top bg-white">
+      <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#collapsibleNav">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">about</a>
+            <!-- data-toggle="collapse" data-target=".navbar-collapse.show" -->
+          </li>
+          <li class="nav-item">
+            <a href="#coding" class="nav-link">coding</a>
+          </li>
+          <li class="nav-item">
+            <a href="#design" class="nav-link">design</a>
+          </li>
+          <li class="nav-item">
+            <a href="#cv" class="nav-link">cv</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <nav role="navigation" class="navbar my-sticky sticky-top justify-content-center rounded nav-border bg-white"> -->
+
+    <!-- collapsible nav -->
+    <!-- <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsibleNav">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+
+      <div class="collapse navbar-toggleable-xs" id="collapsibleNav">
+        <ul>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#about">about</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#coding">coding</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#design">design</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#cv">cv</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
 
     <!-- about me -->
     <section class="min-vh-100 mt-5" id="about">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="pt-4 pb-1 pl-2 mt-5 text-dark">about me</h1>
+          <h1 class="section-title pb-1 pl-2 text-dark">about me</h1>
         </div>
       </div>
       <div class="row">
@@ -105,7 +128,7 @@
 
         <!-- about me text -->
         <div class="col-sm-12 col-md-6 align-self-center">
-          <p class="text-dark">
+          <p class="text-dark pt-3">
             Hello, I'm Roz.<br><br>
 
             Welcome to my portfolio website. This is a space for me to showcase my coding and design work.<br><br>
@@ -125,10 +148,13 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h1 class="pt-4 pb-1 pl-2 mt-5 text-dark">coding</h1>
+          <h1 class="section-title pb-1 pl-2 text-dark">coding</h1>
         </div>
       </div>
 
+
+
+      <!-- coding carousel -->
       <div class="container">
         <div class="w-100 h-100 border">
           <div class="carousel slide" id="coding-carousel" data-ride="carousel">
@@ -162,8 +188,7 @@
             </a>
           </div>
         </div>
-      </div>
-
+      </div> <!-- coding carousel end -->
 
     </section><!-- coding end -->
 
@@ -172,7 +197,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h1 class="pt-4 pb-1 pl-2 mt-5 text-dark">design</h1>
+          <h1 class="section-title pb-1 pl-2 text-dark">design</h1>
         </div>
       </div>
 
@@ -214,7 +239,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h1 class="pt-4 pb-1 pl-2 mt-5 text-dark">cv</h1>
+          <h1 class="section-title pb-1 pl-2 text-dark">cv</h1>
         </div>
 
       </div>
@@ -233,7 +258,7 @@
       <div class="row">
         <!-- left footer col-->
         <div class="col-md-3">
-          <h1 class="pt-4 pb-2 pl-2 mt-5 text-dark">
+          <h1 class="section-title pb-2 pl-2 text-dark">
             contact
           </h1>
           <ul class="footer-list">
@@ -259,7 +284,7 @@
 
         <!-- middle footer col -->
         <div class="col-md-3 ">
-          <h1 class="pt-4 pb-2 pl-2 mt-5 text-dark">other projects</h1>
+          <h1 class="section-title pb-2 pl-2 text-dark">other projects</h1>
           <ul class="footer-list">
             <li class="ellipsis-list">
               coming soon
@@ -291,6 +316,15 @@
       </div><!-- footer row end -->
     </div><!-- footer container end -->
   </footer>
+  <!-- JS -->
+
+  <!-- JQuery-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+  <!-- Popper and JS Plugins -->
+  <script src="js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
