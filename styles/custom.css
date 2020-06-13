@@ -68,12 +68,20 @@ p {
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon,
-.carousel-indicators,
-.carousel-caption {
+.carousel-indicators {
   filter: invert(1);
 }
 .carousel-caption p {
   font-size: 16px;
+}
+
+/* Coding pages */
+
+.coding-list {
+  font-size: 24px;
+}
+code {
+  color: #b967ff;
 }
 
 /* Footer */
