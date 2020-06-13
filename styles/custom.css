@@ -16,7 +16,7 @@ h1 {
   font-weight: bolder;
 }
 p {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .section-title::before {
@@ -33,6 +33,10 @@ p {
   color: #b967ff;
 }
 
+.bg-purple {
+  background-color: #b967ff;
+}
+
 /* Icons */
 #chevron a:link {
   color: #ededed;
@@ -45,14 +49,16 @@ p {
 }
 
 /* Nav styling */
-.nav-border {
-  border: solid 1px #b967ff;
-}
-.my-sticky {
+/* .nav-border {
+  border-bottom: solid 1px #b967ff;
+  border-top: solid 1px #b967ff;
+} */
+/* .my-sticky {
   top: 10px;
-}
-.nav-link {
-  font-size: 2rem;
+} */
+.nav-item {
+  font-size: 18px;
+  /* padding: 0 10px; */
 }
 .nav-link:link {
   color: #292b2c;
@@ -78,7 +84,7 @@ p {
 /* Coding pages */
 
 .coding-list {
-  font-size: 24px;
+  font-size: 18px;
 }
 code {
   color: #b967ff;
