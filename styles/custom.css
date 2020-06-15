@@ -16,6 +16,9 @@ h1 {
   font-weight: bolder;
   color: #36454f;
 }
+h5 {
+  color: #36454f;
+}
 p {
   font-size: 18px;
   color: #36454f;
@@ -84,7 +87,7 @@ p {
   color: #292b2c;
 }
 .nav-link:hover {
-  color: #4059ad;
+  color: #ee4266;
 }
 
 /* Carousel */
