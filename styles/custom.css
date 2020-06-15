@@ -24,6 +24,17 @@ p {
   color: #36454f;
 }
 
+a:link {
+  color: #292b2c;
+}
+a:visited {
+  color: #292b2c;
+}
+a:hover {
+  color: #ee4266;
+  text-decoration: none;
+}
+
 .section-title::before {
   display: block;
   content: " ";
@@ -107,17 +118,23 @@ p {
   font-size: 18px;
 }
 code {
-  color: #b967ff;
+  color: #ee4266;
 }
 
 /* Footer */
-a:link {
+footer h1 {
   color: white;
 }
-a:visited {
+footer ul {
   color: white;
 }
-a:hover {
+footer a:link {
+  color: white;
+}
+footer a:visited {
+  color: white;
+}
+footer a:hover {
   color: #4059ad;
   text-decoration: none;
 }
