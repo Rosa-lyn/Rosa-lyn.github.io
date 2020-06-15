@@ -1,11 +1,9 @@
 /* Custom Style Sheet */
 
 /* General */
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   /* font-family: "Rubik", sans-serif; */
   font-family: "Raleway", sans-serif;
@@ -16,6 +14,11 @@ h1 {
   font-weight: bolder;
   color: #36454f;
 }
+h2 {
+  font-family: "Lobster", cursive;
+  font-weight: bolder;
+  color: #ee4266;
+}
 h5 {
   color: #36454f;
 }
@@ -23,7 +26,6 @@ p {
   font-size: 18px;
   color: #36454f;
 }
-
 a:link {
   color: #292b2c;
 }
@@ -42,6 +44,14 @@ a:hover {
   height: 300px;
   visibility: hidden;
   pointer-events: none;
+}
+
+button {
+  color: white;
+  border-style: none;
+  background-color: #ee4266;
+  font-size: 20px;
+  padding: 10px 15px;
 }
 
 /* My colours */
@@ -113,7 +123,6 @@ a:hover {
 }
 
 /* Coding pages */
-
 .coding-list {
   font-size: 18px;
 }
