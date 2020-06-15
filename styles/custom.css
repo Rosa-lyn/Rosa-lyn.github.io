@@ -14,9 +14,11 @@ h1 {
   /* font-family: "Raleway", sans-serif; */
   font-family: "Lobster", cursive;
   font-weight: bolder;
+  color: #36454f;
 }
 p {
   font-size: 18px;
+  color: #36454f;
 }
 
 .section-title::before {
@@ -37,28 +39,43 @@ p {
   background-color: #b967ff;
 }
 
+.my-steel {
+  color: #bfcde0;
+}
+.bg-steel {
+  background-color: #bfcde0;
+}
+
+.my-red {
+  color: #ee4266;
+}
+.bg-red {
+  background-color: #ee4266;
+}
+.my-blue {
+  color: #4059ad;
+}
+.bg-blue {
+  background-color: #4059ad;
+}
+.my-charcoal {
+  color: #36454f;
+}
+
 /* Icons */
 #chevron a:link {
-  color: #ededed;
+  color: white;
 }
 #chevron a:visited {
-  color: #ededed;
+  color: white;
 }
 #chevron a:hover {
-  color: #bcbcbc;
+  color: #4059ad;
 }
 
 /* Nav styling */
-/* .nav-border {
-  border-bottom: solid 1px #b967ff;
-  border-top: solid 1px #b967ff;
-} */
-/* .my-sticky {
-  top: 10px;
-} */
 .nav-item {
   font-size: 18px;
-  /* padding: 0 10px; */
 }
 .nav-link:link {
   color: #292b2c;
@@ -67,7 +84,7 @@ p {
   color: #292b2c;
 }
 .nav-link:hover {
-  color: #b967ff;
+  color: #4059ad;
 }
 
 /* Carousel */
@@ -92,13 +109,13 @@ code {
 
 /* Footer */
 a:link {
-  color: #292b2c;
+  color: white;
 }
 a:visited {
-  color: #292b2c;
+  color: white;
 }
 a:hover {
-  color: #b967ff;
+  color: #4059ad;
   text-decoration: none;
 }
 
