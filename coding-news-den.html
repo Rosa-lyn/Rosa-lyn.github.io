@@ -51,110 +51,136 @@
             </div>
         </nav>
 
-        <section class="min-vh-100 mt-5">
-            <h1 class="section-title pb-1 pl-2 text-dark">
-                the news den api
-            </h1>
-            <p class="pt-3">
-                I completed this project as part of the back-end section of the Northcoders Developer Pathway.
+        <section class="min-vh-100">
+            <div class="row">
+                <div class="col-md-12">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="section-title pb-1 pl-2">
+                        the news den api
+                    </h1>
+                    <p class="pt-3">
+                        I completed this project as part of the back-end section of the Northcoders Developer
+                        Pathway.
 
-                It is a RESTful API that will serve as the back-end for my <em>The News Den</em> website, a social news
-                aggregation similar
-                to <em>Reddit</em>. <br><br>
-
-                The API was built using full TDD methodologies, with the following technologies:
-            </p>
-            <ul class="coding-list">
-                <li>
-                    JavaScript/Node.js
-                </li>
-                <li>
-                    Express - Web framework
-                </li>
-                <li>
-                    PostgreSQL - Database
-                </li>
-                <li>
-                    Knex - Migrations and query building
-                </li>
-                <li>
-                    Heroku - Hosting
-                </li>
-            </ul>
-            <p>
-                I tested the endpoints with:
-            </p>
-            <ul class="coding-list">
-                <li>
-                    Mocha
-                </li>
-                <li>
-                    Chai
-                </li>
-                <li>
-                    Chai Sorted
-                </li>
-                <li>
-                    Supertest
-                </li>
-            </ul>
-            <p>
-                The following endpoints are available on the API:
-            </p>
-            <ul class="coding-list">
-                <li>
-                    <code> GET /api:</code> serves a JSON representation of all the available endpoints of the API.
-                </li>
-                <li>
-                    <code> GET /api/articles:</code> serves an array of all articles.
-                </li>
-                <li>
-                    <code> GET /api/topics:</code> serves an array of all topics.
-                </li>
-                <li>
-                    <code> GET /api/users/:username:</code> serves a user object.
-                </li>
-                <li>
-                    <code> GET /api/articles/:article_id:</code> serves an article object.
-                </li>
-                <li>
-                    <code> PATCH /api/articles/:article_id:</code> accepts an object in the form
-                    <code>{ inc_votes: newVote }</code>
-                    and serves an
-                    article object with the updated number of votes.
-                </li>
-                <li>
-                    <code> POST /api/articles/:article_id/comments:</code> accepts a comment object in the form
-                    <code> {
-                    username: username,
-                    body: body }</code>, adds the comment to the given <code>article_id</code> and serves the posted
-                    comment.
-                </li>
-                <li>
-                    <code> GET /api/articles/:article_id/comments:</code> serves an array of comments for the given
-                    <code>article_id</code>.
-                </li>
-                <li>
-                    <code> PATCH /api/comments/:comment_id:</code> accepts an object in the form
-                    <code> { inc_votes: newVote }</code>,
-                    updates the votes on a comment and serves the updated comment.
-                </li>
-                <li>
-                    <code> DELETE /api/comments/:comment_id:</code> deletes the comment by the given
-                    <code>comment_id</code>.
-                </li>
-            </ul>
-            <p class="pb-3">
-                In the future, I will be adding more functionality and a front-end. <br><br>
-
-                You can view the API <a href="https://the-news-den.herokuapp.com/api"
-                    target="_blank"><strong>here</strong></a> and the code <a
-                    href="https://github.com/Rosa-lyn/northcoders-news" target="_blank"><strong>here</strong></a>.
-            </p>
+                        It is a RESTful API that will serve as the back-end for my <em>The News Den</em> website, a
+                        social news
+                        aggregation similar
+                        to <em>Reddit</em>.
+                    </p>
+                    <img class="img-fluid border my-3" src="/images/rlpw-coding-newsden-md.png" alt="">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 px-4">
+                        <p>
+                            The following endpoints are available on the API:
+                        </p>
+                        <ul class="coding-list">
+                            <li>
+                                <code>GET /api:</code> serves a JSON representation of all the available endpoints of
+                                the
+                                API.
+                            </li>
+                            <li>
+                                <code>GET /api/articles:</code> serves an array of all articles.
+                            </li>
+                            <li>
+                                <code>GET /api/topics:</code> serves an array of all topics.
+                            </li>
+                            <li>
+                                <code>GET /api/users/:username:</code> serves a user object.
+                            </li>
+                            <li>
+                                <code>GET /api/articles/:article_id:</code> serves an article object.
+                            </li>
+                            <li>
+                                <code>PATCH /api/articles/:article_id:</code> accepts an object in the form
+                                <code>{ inc_votes: newVote }</code>
+                                and serves an
+                                article object with the updated number of votes.
+                            </li>
+                            <li>
+                                <code>POST /api/articles/:article_id/comments:</code> accepts a comment object in the
+                                form
+                                <code>{
+                        username: username,
+                        body: body }</code>, adds the comment to the given <code>article_id</code> and serves the
+                                posted
+                                comment.
+                            </li>
+                            <li>
+                                <code>GET /api/articles/:article_id/comments:</code> serves an array of comments for
+                                the
+                                given
+                                <code>article_id</code>.
+                            </li>
+                            <li>
+                                <code>PATCH /api/comments/:comment_id:</code> accepts an object in the form
+                                <code>{ inc_votes: newVote }</code>,
+                                updates the votes on a comment and serves the updated comment.
+                            </li>
+                            <li>
+                                <code>DELETE /api/comments/:comment_id:</code> deletes the comment by the given
+                                <code>comment_id</code>.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 px-4">
+                        <p>
+                            The API was built using full TDD methodologies, with the following technologies:
+                        </p>
+                        <ul class="coding-list">
+                            <li>
+                                JavaScript/Node.js
+                            </li>
+                            <li>
+                                Express - Web framework
+                            </li>
+                            <li>
+                                PostgreSQL - Database
+                            </li>
+                            <li>
+                                Knex - Migrations and query building
+                            </li>
+                            <li>
+                                Heroku - Hosting
+                            </li>
+                        </ul>
+                        <p>
+                            I tested the endpoints with:
+                        </p>
+                        <ul class="coding-list">
+                            <li>
+                                Mocha
+                            </li>
+                            <li>
+                                Chai
+                            </li>
+                            <li>
+                                Chai Sorted
+                            </li>
+                            <li>
+                                Supertest
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <button type="button"><a href="https://github.com/Rosa-lyn/northcoders-news">code</a></button>
+                    <button type="button"><a href="https://the-news-den.herokuapp.com/api">demo</a></button>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
             <div class="row">
                 <div class="col-md-6 text-left">
                     <p>
-                        <a href="design-portfolio-logo.html"><i class="fas fa-chevron-circle-left"></i> previous
+                        <a href="design-fila-logo.html"><i class="fas fa-chevron-circle-left"></i> previous
                             project</a>
                     </p>
                 </div>
@@ -162,7 +188,6 @@
                     <p>
                         <a href="coding-portfolio-website.html">next project <i
                                 class="fas fa-chevron-circle-right"></i></a>
-
                     </p>
                 </div>
             </div>

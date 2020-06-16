@@ -5,11 +5,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  /* font-family: "Rubik", sans-serif; */
   font-family: "Raleway", sans-serif;
 }
 h1 {
-  /* font-family: "Raleway", sans-serif; */
   font-family: "Lobster", cursive;
   font-weight: bolder;
   color: #36454f;
@@ -40,7 +38,7 @@ a:hover {
 .section-title::before {
   display: block;
   content: " ";
-  margin-top: -200px;
+  margin-top: -230px;
   height: 300px;
   visibility: hidden;
   pointer-events: none;
@@ -53,16 +51,17 @@ button {
   font-size: 20px;
   padding: 10px 15px;
 }
+button:link {
+  color: white;
+}
+button:visited {
+  color: white;
+}
+button:hover {
+  color: #4059ad;
+}
 
 /* My colours */
-.my-purple {
-  color: #b967ff;
-}
-
-.bg-purple {
-  background-color: #b967ff;
-}
-
 .my-steel {
   color: #bfcde0;
 }
@@ -128,6 +127,10 @@ button {
 }
 code {
   color: #ee4266;
+}
+
+#cv li {
+  font-size: 18px;
 }
 
 /* Footer */
