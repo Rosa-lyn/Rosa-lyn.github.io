@@ -22,7 +22,6 @@
 
 <body>
     <div class="container">
-
         <nav class="navbar navbar-expand-md bg-white sticky-top ml-auto">
             <a href="index.html" class="navbar-brand"><img src="./images/rlpw-logo-red.png" alt="Rosalyn Land logo"
                     height="30" width="auto"></a>
@@ -54,10 +53,6 @@
         <section class="min-vh-100">
             <div class="row">
                 <div class="col-md-12">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
                     <h1 class="section-title pb-1 pl-2">
                         the news den api
                     </h1>
@@ -70,137 +65,162 @@
                         aggregation similar
                         to <em>Reddit</em>.
                     </p>
-                    <img class="img-fluid border my-3" src="/images/rlpw-coding-newsden-md.png" alt="">
+                    <img class="img-fluid border my-3" src="/images/rlpw-coding-newsden-md.png" alt="The News Den API">
                 </div>
-                <div class="row">
-                    <div class="col-md-6 px-4">
-                        <p>
-                            The following endpoints are available on the API:
-                        </p>
-                        <ul class="coding-list">
-                            <li>
-                                <code>GET /api:</code> serves a JSON representation of all the available endpoints of
-                                the
-                                API.
-                            </li>
-                            <li>
-                                <code>GET /api/articles:</code> serves an array of all articles.
-                            </li>
-                            <li>
-                                <code>GET /api/topics:</code> serves an array of all topics.
-                            </li>
-                            <li>
-                                <code>GET /api/users/:username:</code> serves a user object.
-                            </li>
-                            <li>
-                                <code>GET /api/articles/:article_id:</code> serves an article object.
-                            </li>
-                            <li>
-                                <code>PATCH /api/articles/:article_id:</code> accepts an object in the form
-                                <code>{ inc_votes: newVote }</code>
-                                and serves an
-                                article object with the updated number of votes.
-                            </li>
-                            <li>
-                                <code>POST /api/articles/:article_id/comments:</code> accepts a comment object in the
-                                form
-                                <code>{
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        The following endpoints are available on the API:
+                    </p>
+                    <ul class="coding-list">
+                        <li>
+                            <code>GET /api:</code> serves a JSON representation of all the available endpoints of
+                            the
+                            API.
+                        </li>
+                        <li>
+                            <code>GET /api/articles:</code> serves an array of all articles.
+                        </li>
+                        <li>
+                            <code>GET /api/topics:</code> serves an array of all topics.
+                        </li>
+                        <li>
+                            <code>GET /api/users/:username:</code> serves a user object.
+                        </li>
+                        <li>
+                            <code>GET /api/articles/:article_id:</code> serves an article object.
+                        </li>
+                        <li>
+                            <code>PATCH /api/articles/:article_id:</code> accepts an object in the form
+                            <code>{ inc_votes: newVote }</code>
+                            and serves an
+                            article object with the updated number of votes.
+                        </li>
+                        <li>
+                            <code>POST /api/articles/:article_id/comments:</code> accepts a comment object in the
+                            form
+                            <code>{
                         username: username,
                         body: body }</code>, adds the comment to the given <code>article_id</code> and serves the
-                                posted
-                                comment.
-                            </li>
-                            <li>
-                                <code>GET /api/articles/:article_id/comments:</code> serves an array of comments for
-                                the
-                                given
-                                <code>article_id</code>.
-                            </li>
-                            <li>
-                                <code>PATCH /api/comments/:comment_id:</code> accepts an object in the form
-                                <code>{ inc_votes: newVote }</code>,
-                                updates the votes on a comment and serves the updated comment.
-                            </li>
-                            <li>
-                                <code>DELETE /api/comments/:comment_id:</code> deletes the comment by the given
-                                <code>comment_id</code>.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 px-4">
-                        <p>
-                            The API was built using full TDD methodologies, with the following technologies:
-                        </p>
-                        <ul class="coding-list">
-                            <li>
-                                JavaScript/Node.js
-                            </li>
-                            <li>
-                                Express - Web framework
-                            </li>
-                            <li>
-                                PostgreSQL - Database
-                            </li>
-                            <li>
-                                Knex - Migrations and query building
-                            </li>
-                            <li>
-                                Heroku - Hosting
-                            </li>
-                        </ul>
-                        <p>
-                            I tested the endpoints with:
-                        </p>
-                        <ul class="coding-list">
-                            <li>
-                                Mocha
-                            </li>
-                            <li>
-                                Chai
-                            </li>
-                            <li>
-                                Chai Sorted
-                            </li>
-                            <li>
-                                Supertest
-                            </li>
-                        </ul>
-                    </div>
+                            posted
+                            comment.
+                        </li>
+                        <li>
+                            <code>GET /api/articles/:article_id/comments:</code> serves an array of comments for
+                            the
+                            given
+                            <code>article_id</code>.
+                        </li>
+                        <li>
+                            <code>PATCH /api/comments/:comment_id:</code> accepts an object in the form
+                            <code>{ inc_votes: newVote }</code>,
+                            updates the votes on a comment and serves the updated comment.
+                        </li>
+                        <li>
+                            <code>DELETE /api/comments/:comment_id:</code> deletes the comment by the given
+                            <code>comment_id</code>.
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-4">
-                    <button type="button"><a href="https://github.com/Rosa-lyn/northcoders-news">code</a></button>
-                    <button type="button"><a href="https://the-news-den.herokuapp.com/api">demo</a></button>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 text-left">
+                <div class="col-md-6">
                     <p>
-                        <a href="design-fila-logo.html"><i class="fas fa-chevron-circle-left"></i> previous
-                            project</a>
+                        The API was built using full TDD methodologies, with the following technologies:
                     </p>
+                    <ul class="coding-list">
+                        <li>
+                            JavaScript/Node.js
+                        </li>
+                        <li>
+                            Express - Web framework
+                        </li>
+                        <li>
+                            PostgreSQL - Database
+                        </li>
+                        <li>
+                            Knex - Migrations and query building
+                        </li>
+                        <li>
+                            Heroku - Hosting
+                        </li>
+                    </ul>
+                    <p>
+                        I tested the endpoints with:
+                    </p>
+                    <ul class="coding-list">
+                        <li>
+                            Mocha
+                        </li>
+                        <li>
+                            Chai
+                        </li>
+                        <li>
+                            Chai Sorted
+                        </li>
+                        <li>
+                            Supertest
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-6 text-right">
+            </div>
+            <!-- code demo buttons -->
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="d-inline m-4">
+                        <button type="button">
+                            <a href="https://github.com/Rosa-lyn/northcoders-news" target="_blank">
+                                code
+                            </a>
+                        </button>
+                    </div>
+                    <div class="d-inline m-4">
+                        <button type="button">
+                            <a href="https://the-news-den.herokuapp.com/api" target="_blank">
+                                demo
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6"></div>
+            </div><!-- code demo buttons end -->
+            <!-- prev/next -->
+            <div class="row py-3">
+                <!-- prev -->
+                <div class="col text-left">
+                    <p>
+                        <a href="design-fila-logo.html">
+                            <i class="fas fa-chevron-circle-left"></i> previous project
+                        </a>
+                    </p>
+                </div> <!-- prev end -->
+                <!-- next -->
+                <div class="col text-right">
                     <p>
                         <a href="coding-portfolio-website.html">next project <i
                                 class="fas fa-chevron-circle-right"></i></a>
                     </p>
-                </div>
-            </div>
-        </section>
-    </div>
+                </div> <!-- next end -->
+            </div> <!-- prev/next end -->
+
+        </section> <!-- min-vh-100 end -->
+    </div> <!-- main container end -->
+
     <footer id="newsden-contact" class="bg-red py-5">
         <div class="container">
             <div class="row">
+                <div class="col py-5">
+
+                </div>
+            </div>
+            <div class="row">
                 <!-- left footer col-->
                 <div class="col-md-3">
-                    <h1 class="section-title pb-2 pl-2">
+                    <h1 class="pb-2 pl-2">
                         contact
                     </h1>
+                    <p>
+                        If you're interested in my work, <br>I'd love for you to get in touch.
+                    </p>
                     <ul class="footer-list">
                         <li class="github-list">
                             <a href="https://github.com/rosa-lyn" target="_blank">
@@ -224,11 +244,12 @@
 
                 <!-- middle footer col -->
                 <div class="col-md-3 ">
-                    <h1 class="section-title pb-2 pl-2">other projects</h1>
+                    <h1 class="pb-2 pl-2">other projects</h1>
                     <ul class="footer-list">
                         <li class="ellipsis-list">
                             coming soon
                         </li>
+
                     </ul>
                 </div>
 

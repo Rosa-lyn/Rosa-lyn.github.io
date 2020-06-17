@@ -34,7 +34,6 @@ a:hover {
   color: #ee4266;
   text-decoration: none;
 }
-
 .section-title::before {
   display: block;
   content: " ";
@@ -43,32 +42,18 @@ a:hover {
   visibility: hidden;
   pointer-events: none;
 }
-
-button {
-  color: white;
-  border-style: none;
-  background-color: #ee4266;
+.download-cv {
   font-size: 20px;
   padding: 10px 15px;
 }
-button:link {
-  color: white;
-}
-button:visited {
-  color: white;
-}
-button:hover {
-  color: #4059ad;
+#cv li {
+  font-size: 18px;
 }
 
 /* My colours */
 .my-steel {
   color: #bfcde0;
 }
-.bg-steel {
-  background-color: #bfcde0;
-}
-
 .my-red {
   color: #ee4266;
 }
@@ -111,7 +96,6 @@ button:hover {
 }
 
 /* Carousel */
-
 .carousel-control-next-icon,
 .carousel-control-prev-icon,
 .carousel-indicators {
@@ -129,38 +113,28 @@ code {
   color: #ee4266;
 }
 
-#cv li {
-  font-size: 18px;
-}
-
 /* Footer */
-footer h1 {
-  color: white;
-}
-footer ul {
-  color: white;
-}
-footer a:link {
-  color: white;
-}
-footer a:visited {
-  color: white;
-}
+footer h1,
+footer p,
+footer ul,
+footer a:link,
+footer a:visited,
 footer a:hover {
-  color: #4059ad;
+  color: white;
   text-decoration: none;
+}
+footer p {
+  font-size: inherit;
 }
 
 .footer-list {
   list-style: none;
   padding: 0;
 }
-
 .footer-list li {
   padding-left: 1.5rem;
   padding: 5px 0;
 }
-
 .github-list::before {
   content: "\f09b";
   font-family: "FontAwesome";
