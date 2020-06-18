@@ -118,10 +118,12 @@ footer h1,
 footer p,
 footer ul,
 footer a:link,
-footer a:visited,
-footer a:hover {
+footer a:visited {
   color: white;
   text-decoration: none;
+}
+footer a:hover {
+  color: #4059ad;
 }
 footer p {
   font-size: inherit;
