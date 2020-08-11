@@ -149,6 +149,12 @@ footer p {
   display: inline-block;
   width: 1.5rem;
 }
+.twitter-list::before {
+  content: "\f099";
+  font-family: "FontAwesome";
+  display: inline-block;
+  width: 1.5rem;
+}
 .email-list::before {
   content: "\f0e0";
   font-family: "FontAwesome";
