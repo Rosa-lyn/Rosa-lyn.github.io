@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Here is my portfolio website, which is a space for me to showcase my coding and design work. This is an ongoing project, which I hope to add to and make changes to as I learn new technologies.
+Here is my portfolio website, which is a space for me to showcase my coding work. This is an ongoing project, which I hope to add to and make changes to as I learn new technologies.
 
 ## Built With
 
